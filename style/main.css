@@ -1,0 +1,161 @@
+/* VAR DE CORES*/
+:root {
+    --verde: #379225;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+
+/* ÍCONE LOGO*/
+.nav-links i {
+    font-size: 30px;
+    margin: 10px;
+    color: #379225;
+}
+
+/* CABEÇALHO */
+header .nav-links {
+    display: flex;
+    align-items: center;      
+}
+
+header .nav-links .logo {
+    color: var(--verde);
+    font-family: 'Arial Black';
+    font-size: 40px;    
+    padding-right: 10px;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 10px;    
+}
+
+.nav-links li a {
+    position: relative;
+    color: #379225;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #235c17;
+}
+
+.nav-links a:before {
+    content: '';
+    bottom: 0;
+    left: 0;    
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background: #235c17;
+    border-radius: 12px;
+    transition: all 0.4s ease;    
+}
+
+.nav-links a:hover:before {
+    width: 100%;    
+}
+
+
+/* JOGO PRINCIPAL */
+.container {
+    margin-left: 20px;
+}
+
+.main-game {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,.50)100%), url('/img/DIV2.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buttons a:link {
+    color: #379225;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.buttons a:visited {
+    color: #379225;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.main-game .container {
+    width: 80%;
+}
+
+.main-game .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-game .title {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 5%;
+}
+
+.buttons .button {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    border: 1px solid #fff
+}
+
+.buttons .button i {
+    margin-right: 8px;
+}
+
+.buttons .button:hover {
+    background-color: #fff;
+    color: #379225;    
+    transition: .3s ease all;     
+}
+
+.box-games {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-games {
+    margin-top: 10px;
+}
+
+.box-games {    
+    height: 400px;    
+}
+
+.iframe-about {
+    width: 100%;
+    height: 600px;
+    border:4px solid #379225; 
+}
+
+/* DEMO CSS */
+.demo {
+    font-size: 40px;
+    color: #379225;
+    text-align: center;
+    margin-top: 10px;
+}

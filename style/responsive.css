@@ -1,0 +1,31 @@
+@media screen and (max-width:700px){
+    header .container {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 190px;        
+    }
+
+    .container {
+        margin-bottom: 10px;
+    }      
+
+    .box-games {    
+        height: 650px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .description {
+        width: 60%;
+    }   
+
+    .box-games {    
+        height: 490px;
+        object-fit: cover;
+    }
+}
